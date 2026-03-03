@@ -1,0 +1,69 @@
+{
+  "completed_phases": [
+    "Phase 1: Foundation",
+    "Phase 2: Runner & Reports",
+    "Phase 3: Test Layering",
+    "Phase 4: Parallel Scaffold",
+    "Phase 5: Role Templates",
+    "Phase 6: CI Integration"
+  ],
+  "files_created": [
+    "docs/TODO.md",
+    "docs/STATUS.md",
+    "docs/DECISIONS.md",
+    "docs/HANDOFF.md",
+    "docs/PARALLEL_WORK.md",
+    "docs/ROLES.md",
+    "scripts/agent_run.sh",
+    "scripts/worktree_new.sh",
+    "scripts/oracle_diff.sh",
+    "tests/test_smoke.sh",
+    "tests/test_fast.sh",
+    "tests/test_full.sh",
+    "agents/planner.md",
+    "agents/implementer.md",
+    "agents/verifier.md",
+    "agents/scribe.md",
+    "agents/merger.md",
+    "reports/summary.json",
+    "reports/run_meta.json",
+    "reports/full.log",
+    ".github/workflows/ci.yml",
+    "Makefile"
+  ],
+  "files_modified": [],
+  "final_status": "done",
+  "next_steps": [
+    "Push to remote to trigger CI",
+    "Add project-specific tests to tests/",
+    "Customize agent prompts for your domain",
+    "Set up oracle baselines for your tests"
+  ],
+  "acceptance_criteria": {
+    "scripts/agent_run.sh usable": true,
+    "test-smoke/fast/full three entries exist": true,
+    "fast supports sampling": true,
+    "docs/STATUS/TODO/DECISIONS/HANDOFF.md exist": true,
+    "docs/PARALLEL_WORK.md + worktree script usable": true,
+    "docs/ROLES.md + 5 agent prompts complete": true,
+    "CI wired for smoke/fast": true
+  },
+  "test_results": {
+    "smoke": {
+      "passed": 5,
+      "failed": 0,
+      "status": "PASSED"
+    },
+    "fast": {
+      "passed": 6,
+      "failed": 0,
+      "status": "PASSED"
+    },
+    "full": {
+      "passed": 15,
+      "failed": 0,
+      "status": "PASSED"
+    }
+  },
+  "timestamp": "2026-03-02T18:45:00+00:00"
+}
